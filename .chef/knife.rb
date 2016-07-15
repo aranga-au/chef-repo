@@ -7,5 +7,10 @@ node_name                "aranga"
 client_key               "#{current_dir}/aranga.pem"
 chef_server_url          "https://api.chef.io/organizations/acnonline"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+cookbook_copyright="acnonline.net"
+cookbook_license="apachev2"
+cookbook_email="aranga.nanayakkara@gmail.com"
+
 knife[:aws_access_key_id] = "Your AWS Access Key ID"
 knife[:aws_secret_access_key] = "Your AWS Secret Access Key"
+
