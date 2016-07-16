@@ -11,6 +11,6 @@ cookbook_copyright="acnonline.net"
 cookbook_license="apachev2"
 cookbook_email="aranga.nanayakkara@gmail.com"
 
-knife[:aws_access_key_id] = "Your AWS Access Key ID"
-knife[:aws_secret_access_key] = "Your AWS Secret Access Key"
+knife[:aws_access_key_id] = ENV["AWS_ACCESS_KEY"]
+knife[:aws_secret_access_key] = ENV["AWS_SECRET_KEY"]
 

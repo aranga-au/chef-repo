@@ -15,4 +15,5 @@ Vagrant.configure("2") do |config|
     vb.gui = false
     vb.name = ENV['HOST_NAME']
   end
+  config.berkshelf.enabled = true
 end
