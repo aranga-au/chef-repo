@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     chef.node_name = ENV['HOST_NAME']
   end
   config.vm.provider :virtualbox do |vb|
-    vb.gui = false
+    vb.gui = true
     vb.name = ENV['HOST_NAME']
   end
   config.berkshelf.enabled = true
