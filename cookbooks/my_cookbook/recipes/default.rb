@@ -8,4 +8,8 @@
 #
 include_recipe 'chef_client'
 include_recipe 'apt'
-include_recipe 'ntp' 
+include_recipe 'ntp'
+
+message = node['my_cookbook']['message']
+Chef::Log.info("** Saying What I was told to say: #{message}")
+
