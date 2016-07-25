@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
     chef.validation_key_path = "c:/development/ChefDK/chef-repo/.chef/acnonline-validator.pem"
     chef.validation_client_name = "acnonline-validator"
     chef.node_name = ENV['HOST_NAME']
+    chef.run_list = ["recipe[redis]"]
   end
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
